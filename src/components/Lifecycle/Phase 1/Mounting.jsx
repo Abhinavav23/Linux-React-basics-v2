@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Component } from "react";
 
 export class Mounting extends Component{
@@ -16,7 +15,6 @@ export class Mounting extends Component{
     }
 
     // static getDerivedStateFromProps(props, state){
-
     //     console.log('props', props);
     //     console.log('state', state);
     //     console.log('calling getDerivedStateFromProps');
