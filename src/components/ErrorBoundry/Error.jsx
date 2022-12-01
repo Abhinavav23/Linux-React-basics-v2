@@ -34,3 +34,6 @@ export default class Error extends Component {
     return this.props.children
   }
 }
+
+
+<input id="name"/>
