@@ -1,5 +1,6 @@
-import { createContext } from 'react';
+import { createContext, useRef } from 'react';
 import './App.css';
+import { FunCompAPi } from './components/APIs/FunCompAPi';
 import { ContextClass } from './components/ContextInClassComp/ContextClass';
 import Error from './components/ErrorBoundry/Error';
 import Player from './components/ErrorBoundry/Player';
@@ -7,11 +8,18 @@ import { FirstClassComp } from './components/FirstClassComp';
 import ReactKeys from './components/Keys/ReactKeys';
 import { Mounting } from './components/Lifecycle/Phase 1/Mounting';
 import { FormUsingRef } from './components/Refs/FormUsingRef';
+import {Login} from './components/Refs/Login';
 import { Stopwatch } from './components/Refs/Stopwatch';
 
 export const UserInfoContext = createContext();
 
 function App() {
+
+  const nameRef = useRef();
+
+  const focusUserName = () => {
+    nameRef.current.focus();
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -48,7 +56,11 @@ function App() {
 
         {/* <ReactKeys/> */}
         {/* <FormUsingRef/> */}
-        <Stopwatch/>
+        {/* <Stopwatch/> */}
+        {/* <button onClick={focusUserName}>add user name</button>
+        <Login ref={nameRef} name='Abhinav' address='India'/> */}
+
+        <FunCompAPi/>
 
       </header>
     </div>

@@ -29,13 +29,19 @@ export const Stopwatch = () => {
             clearInterval(timerRef.current);
         }
     }, [])
+
+    const reset = () => {
+        setCurTime(0);
+        stopTimer();
+    }
     
   return (
     <>
         <div>Stopwatch</div>
         <div>Time: {curTime}</div>
-        <button onClick={start}>start</button>
+        <button onClick={start} disabled>start</button>
         <button onClick={stopTimer}>stop</button>
+        <button onClick={reset}>reset</button>
     </>
   )
 }
