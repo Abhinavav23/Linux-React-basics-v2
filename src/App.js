@@ -1,5 +1,6 @@
 import { createContext, useRef } from 'react';
 import './App.css';
+import ApisInClassComp from './components/APIs/ApisInClassComp';
 import { FunCompAPi } from './components/APIs/FunCompAPi';
 import { ContextClass } from './components/ContextInClassComp/ContextClass';
 import Error from './components/ErrorBoundry/Error';
@@ -55,12 +56,14 @@ function App() {
         */}
 
         {/* <ReactKeys/> */}
-        {/* <FormUsingRef/> */}
+        <FormUsingRef/>
         {/* <Stopwatch/> */}
         {/* <button onClick={focusUserName}>add user name</button>
         <Login ref={nameRef} name='Abhinav' address='India'/> */}
 
-        <FunCompAPi/>
+        {/* <FunCompAPi/> */}
+
+        {/* <ApisInClassComp/> */}
 
       </header>
     </div>
