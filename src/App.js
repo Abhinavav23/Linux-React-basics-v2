@@ -6,6 +6,7 @@ import { ContextClass } from './components/ContextInClassComp/ContextClass';
 import Error from './components/ErrorBoundry/Error';
 import Player from './components/ErrorBoundry/Player';
 import { FirstClassComp } from './components/FirstClassComp';
+import { FormV1 } from './components/FormValidation/FormV1';
 import ReactKeys from './components/Keys/ReactKeys';
 import { Mounting } from './components/Lifecycle/Phase 1/Mounting';
 import { FormUsingRef } from './components/Refs/FormUsingRef';
@@ -56,7 +57,7 @@ function App() {
         */}
 
         {/* <ReactKeys/> */}
-        <FormUsingRef/>
+        {/* <FormUsingRef/> */}
         {/* <Stopwatch/> */}
         {/* <button onClick={focusUserName}>add user name</button>
         <Login ref={nameRef} name='Abhinav' address='India'/> */}
@@ -64,6 +65,8 @@ function App() {
         {/* <FunCompAPi/> */}
 
         {/* <ApisInClassComp/> */}
+
+        <FormV1/>
 
       </header>
     </div>
