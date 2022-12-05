@@ -7,6 +7,7 @@ import Error from './components/ErrorBoundry/Error';
 import Player from './components/ErrorBoundry/Player';
 import { FirstClassComp } from './components/FirstClassComp';
 import { FormV1 } from './components/FormValidation/FormV1';
+import { FormV2 } from './components/FormValidation/FormV2';
 import ReactKeys from './components/Keys/ReactKeys';
 import { Mounting } from './components/Lifecycle/Phase 1/Mounting';
 import { FormUsingRef } from './components/Refs/FormUsingRef';
@@ -66,7 +67,8 @@ function App() {
 
         {/* <ApisInClassComp/> */}
 
-        <FormV1/>
+        {/* <FormV1/> */}
+        <FormV2/>
 
       </header>
     </div>
