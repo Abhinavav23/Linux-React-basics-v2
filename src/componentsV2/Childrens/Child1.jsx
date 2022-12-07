@@ -1,9 +1,14 @@
 import React, { memo } from 'react'
 
- const Child1 = () => {
+ const Child1 = ({nameAndNo}) => {
     console.log('rendering Child1');
+    console.log(nameAndNo);
   return (
-    <div>Child1</div>
+    <>
+        <h3>Child1</h3>
+        <div>name - {nameAndNo.name}</div>
+        <div>Player name - {nameAndNo.playerName}</div>
+    </>
   )
 }
 

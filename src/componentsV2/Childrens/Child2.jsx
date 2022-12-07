@@ -1,9 +1,14 @@
 import React, { memo } from 'react'
 
-const Child2 = () => {
+const Child2 = ({role, batch}) => {
+    // const {role} = props
     console.log('rendering Child2');
   return (
-    <div>Child2</div>
+    <>
+        <h3>Child2</h3>
+        <div>role: {role}</div>
+        <div>batch - {batch}</div>
+    </>
   )
 }
 
